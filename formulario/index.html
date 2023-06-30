@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.all.min.js"></script>
+
+    <title>Cafena café</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="container1">
+        <div class="logo">
+          <img src="../principal/imagens/logo.png" alt="Logo" />
+          <h3>Cafena café</h3>
+        </div>
+
+        <div class="links">
+          <ul>
+            <li><a href="../principal/home.html">HOME</a></li>
+            <li><a href="../galeria/index.html">GALERIA</a></li>
+            <li><a href="../formulario/index.html">Vire um associado</a></li>
+            <li><a href="../login/index.html">Login</a></li>
+          </ul>
+        </div>
+
+        <div class="overlay"></div>
+
+        <div class="hamburger-menu">
+          <div class="bar"></div>
+        </div>
+      </div>
+    </header>
+
+    <main id="container">
+      <form id="login_form">
+        <div id="form_header">
+          <h1>Cadastro</h1>
+          <i id="mode_icon" class="fa-solid fa-moon"></i>
+        </div>
+
+        <div id="inputs">
+          <div class="input-box">
+            <label for="name">
+              Nome
+              <div class="input-field">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" id="nome" name="nome" /> <br />
+                <span id="errorLogin" class="error">nome é obrigatório</span>
+              </div>
+            </label>
+          </div>
+
+          <div class="input-box">
+            <label for="password">
+              Sobrenome
+              <div class="input-field">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" id="sobrenome" name="sobrenome" /> <br />
+                <span id="errorSobrenome" class="error"
+                  >Sobrenome é obrigatório</span
+                >
+              </div>
+            </label>
+          </div>
+          <div class="input-box">
+            <label for="password">
+              Email
+              <div class="input-field">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" id="email" name="email" /> <br />
+                <span id="errorEmail" class="error">Email é obrigatório</span>
+              </div>
+            </label>
+          </div>
+          <div class="input-box">
+            <label for="password">
+              CPF
+              <div class="input-field">
+                <i class="fa-solid fa-key"></i>
+                <input type="text" id="cpf" name="cpf" /> <br />
+                <span id="errorCPF" class="error">CPF é obrigatório</span>
+              </div>
+            </label>
+          </div>
+          <div class="input-box">
+            <label for="password">
+              Data de Nascimento
+              <div class="input-field">
+                <i class="fa-solid fa-calendar-days"></i>
+                <input type="date" id="data" name="data" />
+                <span id="errorData" class="error"
+                  >Data de nascimento é obrigatória</span
+                >
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <button type="button" id="valida" onclick="validaCampos()">
+          Confirmar
+        </button>
+      </form>
+    </main>
+    <br /><br /><br />
+    <h1 class="separation"></h1>
+    <br />
+    <div class="footer-content">
+      <div class="footer-column1">
+        <div id="social_media">
+          <a href="https://www.facebook.com/">
+            <img src="../assets/facebook.png" alt="" />
+          </a>
+
+          <a href="https://web.whatsapp.com/">
+            <img src="../assets/whats-removebg-preview.png" alt="" />
+          </a>
+
+          <a href="http://www.gmail.com.br/">
+            <img src="../assets/google.png" alt="" />
+          </a>
+          <a href="https://www.google.com.br/maps">
+            <img
+              src="../assets/1808269052-map-1272165_960_720-removebg-preview.png"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+    <br />
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
